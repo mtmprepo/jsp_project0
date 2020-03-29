@@ -1,0 +1,56 @@
+$background_color: #ccffff;
+$main_links_font_color: red;
+$div_bg_color: yellow;
+
+%margin_template {
+	margin: 25px; 
+}
+
+body {
+	background-color: $background_color
+}
+
+p {
+	a {
+		@extend %margin_template;
+		font: sans-serif;
+		color: $main_links_font_color;
+	}
+}
+
+p {
+	@extend %margin_template;
+	
+}
+div {
+	background-color: $div_bg_color;
+	font-size: 20px;
+}
+
+@media screen and (max-width: 300px) {
+	div {
+		font-size : 10px;
+		background-color: red;
+	}
+}
+
+#image_small {
+	height: 245px;
+}
+
+.row_selected {
+	background-color: #ff3399;
+}
+
+table {
+	background: white;
+	padding: 5px;
+	margin: 10px;
+	border: 5px solid;
+	border-spacing: 10px;
+}
+
+td {
+	background-color: #ffcc66;
+	padding: 20px;
+}
